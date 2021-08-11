@@ -44,10 +44,45 @@ img {
     color: wheat;
 }
 
+.contenido-principal{
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.sidebar {
+    background-color: #e5e5e5;
+    padding: 2rem;
+}
+
+.footer{
+    background-color: #db008d;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
 @media screen and (min-width:768px) {
     .navegacion ul{
         flex-direction: row;
         
     }
+
+    .contenido{
+        display: flex;
+    }
+
+    .sidebar{
+        flex: 0 0 20%;
+        order: -1;
+    }
+
+    .derecha{
+        order: 2;
+    }
 }
+
 
